@@ -134,3 +134,7 @@ export function aufgabe20(args) {
   }
   return true;
 }
+
+export function aufgabe21(args) {
+  return args.split('').reverse().join('');
+}
