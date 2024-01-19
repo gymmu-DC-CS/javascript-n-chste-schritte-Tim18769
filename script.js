@@ -192,3 +192,12 @@ export function aufgabe26(args) {
     return "Sie müssen mindestens zwei Zeichen schreiben.";
 }
 }
+
+export function aufgabe27(args) {
+  const mathSymbolsRegex = /^-?\d*\.?\d+$/;
+    const specialNumbers = ['pi', 'π', 'e', 'phi', 'φ', 'sqrt2', '√2', 'sqrt3', '√3', 'gamma', 'γ', 'ln2', 'log2e', 'ln10', 'log10e']; //<--- Habe ich einfach noch hinzugefügt, da Zeichen oder auch gewisse Buchstaben auch Zahlen sein können, wie zB Pi (3.1...)
+
+    const sanitizedInput = args.trim().toLowerCase();
+
+    return mathSymbolsRegex.test(args) || specialNumbers.includes(sanitizedInput);
+}
