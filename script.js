@@ -41,7 +41,7 @@ export function aufgabe07(args) {
   )
   return true
   else return false
-  }
+}
 
 export function aufgabe08(args) {
   const input = args;
@@ -99,4 +99,15 @@ export function aufgabe15(args) {
   const indexOfSpace = args.indexOf(' ');
 
   return indexOfSpace !== -1 ? args.slice(0, indexOfSpace) : args;
+}
+
+export function aufgabe16(args) {
+  const indexOfDollar = input.indexOf('$');
+  if (indexOfDollar !== -1) {
+    const firstPart = input.slice(0, indexOfDollar);
+    const secondPart = input.slice(indexOfDollar + 1);
+    return [firstPart, secondPart];
+  } else {
+    return [input, ''];
+  }
 }
