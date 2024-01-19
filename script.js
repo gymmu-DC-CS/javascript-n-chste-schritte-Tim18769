@@ -239,3 +239,10 @@ export function aufgabe06(args) {
 
   return false 
 }
+
+export function aufgabe18(args) {
+  const name = args.name;
+  const alter = args.alter;
+    
+  return `Sie heissen ${name} und sind ${alter} Jahre alt.`;
+}
