@@ -201,3 +201,14 @@ export function aufgabe27(args) {
 
     return mathSymbolsRegex.test(args) || specialNumbers.includes(sanitizedInput);
 }
+
+export function aufgabe28(args) {
+  const numbers = args.split(' ').map(Number);
+
+    if (numbers.length === 2 && !isNaN(numbers[0]) && !isNaN(numbers[1])) {
+        const sum = numbers[0] + numbers[1];
+        return sum;
+    } else {
+        return "Error";
+    }
+}
