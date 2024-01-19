@@ -158,3 +158,27 @@ export function aufgabe23(args) {
   const firstChar = args[0];
   return firstChar + args + firstChar;
 }
+
+export function aufgabe24(args) {
+  if (args.length < 2) {
+    return args
+  }
+
+  const firstChar = args[0];
+  const lastChar = args[args.length - 1];
+
+  return lastChar + args.slice(1, -1) + firstChar;
+}
+
+export function aufgabe25(args) {
+  const length = args.length;
+
+    if (length % 2 === 0) {
+        const middle1 = length / 2 - 1;
+        const middle2 = length / 2;
+        return args.slice(0, middle1) + args.slice(middle2 + 1);
+    } else {
+        const middle = Math.floor(length / 2);
+        return args.slice(0, middle) + args.slice(middle + 1);
+    }
+}
