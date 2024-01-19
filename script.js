@@ -111,3 +111,8 @@ export function aufgabe16(args) {
     return [input, ''];
   }
 }
+
+export function aufgabe17(args) {
+  const list = input.split(',');
+  return list.map(entry => entry.trim());
+}
