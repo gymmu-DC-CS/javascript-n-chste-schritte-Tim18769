@@ -62,7 +62,7 @@ Suche die Position des dritten `e`s in einem Text.
 
 ## Aufgabe 15
 
-Lesen Sie die Eingabe nur bis zum ersten Leerzeichen ein.
+Lesen Sie die Eingabe nur bis zum ersten Leerzeichen ein.   
 
 ## Aufgabe 16
 
