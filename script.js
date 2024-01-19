@@ -149,3 +149,12 @@ export function aufgabe22(args) {
         return args;
     }
 }
+
+export function aufgabe23(args) {
+  if (args.length === 0) {
+    return "Die Eingabe ist leer.";
+  }
+
+  const firstChar = args[0];
+  return firstChar + args + firstChar;
+}
