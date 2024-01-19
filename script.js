@@ -138,3 +138,14 @@ export function aufgabe20(args) {
 export function aufgabe21(args) {
   return args.split('').reverse().join('');
 }
+
+export function aufgabe22(args) {
+  const indexOfK = args.indexOf('k');
+    if (indexOfK !== -1) {
+        const prefix = args.substring(0, indexOfK);
+        const replacement = '_'.repeat(prefix.length);
+        return replacement + args.substring(indexOfK);
+    } else {
+        return args;
+    }
+}
