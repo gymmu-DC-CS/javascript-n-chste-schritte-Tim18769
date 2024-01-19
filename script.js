@@ -105,10 +105,8 @@ export function aufgabe16(args) {
   } 
 }
 
-//Geht noch nicht//
 export function aufgabe17(args) {
-  const list = args.split(',');
-  return list.map(entry => entry.trim());
+  return args.split(',').map(entry => entry.trim()).join('\n');
 }
 
 export function aufgabe19(args) {
