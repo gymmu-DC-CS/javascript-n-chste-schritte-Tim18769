@@ -182,3 +182,13 @@ export function aufgabe25(args) {
         return args.slice(0, middle) + args.slice(middle + 1);
     }
 }
+
+export function aufgabe26(args) {
+  if (args.length >= 2) {
+    const firstTwoChars = args.substring(0, 2);
+    const sortedChars = firstTwoChars.split('').sort().join('');
+    return sortedChars + args.substring(2);
+} else {
+    return "Sie müssen mindestens zwei Zeichen schreiben.";
+}
+}
