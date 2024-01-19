@@ -102,17 +102,35 @@ export function aufgabe15(args) {
 }
 
 export function aufgabe16(args) {
-  const indexOfDollar = input.indexOf('$');
+  const indexOfDollar = args.indexOf('$');
   if (indexOfDollar !== -1) {
-    const firstPart = input.slice(0, indexOfDollar);
-    const secondPart = input.slice(indexOfDollar + 1);
+    const firstPart = args.slice(0, indexOfDollar);
+    const secondPart = args.slice(indexOfDollar + 1);
     return [firstPart, secondPart];
   } else {
-    return [input, ''];
-  }
+    return [args, ''];
+  } 
 }
 
+//Geht noch nicht//
 export function aufgabe17(args) {
-  const list = input.split(',');
+  const list = args.split(',');
   return list.map(entry => entry.trim());
+}
+
+export function aufgabe19(args) {
+  return args.split('').map(char => char + char).join('');
+}
+
+export function aufgabe20(args) {
+  const dotWithSpace = '. ';
+
+  for (let i = 0; i < args.length; i++) {
+    if (args[i] === '.') {
+      if (args[i + 1] !== ' ' && args.substring(i + 1, i + 2) !== dotWithSpace) {
+        return false;
+      }
+    }
+  }
+  return true;
 }
